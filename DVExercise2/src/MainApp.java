@@ -19,12 +19,12 @@ public class MainApp  extends ApplicationFrame {
     public MainApp( String applicationTitle , String chartTitle, CategoryDataset catData ) {
 		  super( applicationTitle );        
 		  JFreeChart barChart = ChartFactory.createBarChart(
-														     chartTitle,           
-														     "Category",            
-														     "Score",            
-														     catData,          
-														     PlotOrientation.VERTICAL,           
-														     true, true, false);
+									chartTitle,           
+									"Category",            
+									"Score",            
+									catData,          
+									PlotOrientation.VERTICAL,           
+									true, true, false);
 		     
 		  ChartPanel chartPanel = new ChartPanel( barChart );        
 		  chartPanel.setPreferredSize(new Dimension( 560 , 367 ) );        
@@ -34,13 +34,13 @@ public class MainApp  extends ApplicationFrame {
 	public static void main(String[] args) {
 		
 		// 'br' va dichiarata fuori altrimenti il finally non la vede
-		String csvFile = "C:\\Users\\hp\\Desktop\\Other\\java\\CC.csv";
+		String csvFile = "CC.csv";
 		BufferedReader br = null;                                     
 		String line = "";
 		final DefaultCategoryDataset dataset = new DefaultCategoryDataset( );    
 		
 		// prova ad aprire il Buffer, e controlla che ad ogni lettura 
-		// il file è ancora correttamente aperto
+		// il file Ã¨ ancora correttamente aperto
 		try {
 			
 			br = new BufferedReader(new FileReader(csvFile));				
@@ -66,7 +66,7 @@ public class MainApp  extends ApplicationFrame {
 				
 			} // fine del while
 			
-			// se il Buffer è ancora aperto		    
+			// se il Buffer Ã¨ ancora aperto		    
 	        try {
 				br.close();
 	        } catch (IOException e) {
