@@ -16,27 +16,27 @@ import org.jfree.chart.JFreeChart;
 
 public class MainView {
 	
-	ChartPanel chartPanel;
+	public ChartPanel chartPanel;
     public JFrame f;
-    JButton zoomIn;
-    JButton zoomOut;
-    JButton zoom;
-    JButton dateSelect;
-    JFreeChart pieChart;
-    JComboBox start;
-    JComboBox end;
-    JLabel errorLabel;
-    JLabel startLabel;
-    JLabel endLabel;
-    JPanel zoomPanel;
-    JPanel dateSelectPanel;
-    JComboBox chartList;
-    JButton viewSelect;
-    JButton regionSelect;
-    JPanel menuPanel;
-    ArrayList<JCheckBox> boxes;
-    ArrayList<String> currentRegSelection;
-    String[] charts = {"Line Chart", "Bar Chart", "Pie Chart", "Heat map"};
+    public JButton zoomIn;
+    public JButton zoomOut;
+    public JButton zoom;
+    public JButton dateSelect;
+    public JFreeChart pieChart;
+    public JComboBox start;
+    public JComboBox end;
+    public JLabel errorLabel;
+    public JLabel startLabel;
+    public JLabel endLabel;
+    public JPanel zoomPanel;
+    public JPanel dateSelectPanel;
+    public JComboBox chartList;
+    public JButton viewSelect;
+    public JButton regionSelect;
+    public JPanel menuPanel;
+    public ArrayList<JCheckBox> boxes;
+    public ArrayList<String> currentRegSelection;
+    public String[] charts = {"Line Chart", "Bar Chart", "Pie Chart", "Heat map"};
 
     /**
      *  A Constructor for objects of class View. Initializes 
@@ -71,18 +71,17 @@ public class MainView {
 
         // country select menu:
         String[] regions = new String[] { 
-                "Asia (excl. China & India)", 
-                "North America (excl. USA)",
-                "Europe",
-                "South America", 
-                "United States",
-                "Oceania",
-                "Africa",
-                "China", 
-                "India",
+        		"China",
+        		"Africa",
+        		"India",
+        		"North America",
+        		"Central & South America",
+        		"Europe",
+        		"United States",
                 "All"};
+        
         boxes = new ArrayList();
-        regionSelect = new JButton("Select regions:");
+        regionSelect = new JButton("   Select regions:   ");
         menuPanel = new JPanel();
         menuPanel.setPreferredSize(new Dimension(190,400));
         menuPanel.add(regionSelect);
@@ -113,3 +112,4 @@ public class MainView {
     }
     
 }
+
