@@ -9,3 +9,8 @@
 ## Report 4.
 
 ![Alt Text](https://github.com/biontix/DataVisualizationClass/blob/main/DvExercise4/DV3.gif)
+
+
+## Report 5.
+
+![Alt Text](https://github.com/biontix/DataVisualizationClass/blob/main/DvExercise4/DV4.gif)
